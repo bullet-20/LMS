@@ -33,7 +33,7 @@ public class LMS extends JFrame implements ActionListener {
 	        setSize(500, 500);
 	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	
-	      // Create the first panel for the registration form.
+	      // Create the first panel for the registration form
 	        JPanel formPanel = new JPanel(new GridLayout(0, 2));
 	        formPanel.add(new JLabel("Name:"));
 	        nameField = new JTextField();
