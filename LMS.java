@@ -17,43 +17,40 @@ public class LMS extends JFrame implements ActionListener {
         "English for Reading and Writing"
     };    
 	
-    private JTextField nameField;
-    private JComboBox<String> gradeLevelComboBox;
-    private JTextField strandField;
-    private JButton continueButton1;
-    private JPanel coursesPanel;
-    private JButton continueButton2;
-    private JPanel selectedCoursesPanel;
-    private JButton showAvailableCoursesButton;
-
-    public LMS() {
-        setTitle("LMS");
-        setSize(500, 500);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        // Create the first panel for the registration form.
-        JPanel formPanel = new JPanel(new GridLayout(0, 2));
-        formPanel.add(new JLabel("Name:"));
-        nameField = new JTextField();
-        nameField.setPreferredSize(new Dimension(150, 30));
-        formPanel.add(nameField);
-
-        formPanel.add(new JLabel("Grade level:"));
-        gradeLevelComboBox = new JComboBox<>(new String[] {"Grade 11", "Grade 12"});
-        formPanel.add(gradeLevelComboBox);
-
-        formPanel.add(new JLabel("Strand/Major:"));
-        strandField = new JTextField();
-        strandField.setPreferredSize(new Dimension(300, 30));
-        formPanel.add(strandField);
-
-        continueButton1 = new JButton("Continue");
-        continueButton1.addActionListener(this);
-        formPanel.add(continueButton1);
-
-        setContentPane(formPanel);
-        setVisible(true);
-    }
+	    private JTextField nameField;
+	    private JComboBox<String> gradeLevelComboBox;
+	    private JTextField strandField;
+	    private JButton continueButton1;
+	    private JPanel coursesPanel;
+	    private JButton continueButton2;
+	    private JPanel selectedCoursesPanel;
+	    private JButton showAvailableCoursesButton;
+	    
+	    public LMS() {
+	        setTitle("LMS");
+	        setSize(500, 500);
+	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
+	      // Create the first panel for the registration form.
+	        JPanel formPanel = new JPanel(new GridLayout(0, 2));
+	        formPanel.add(new JLabel("Name:"));
+	        nameField = new JTextField();
+	        nameField.setPreferredSize(new Dimension(150, 30));
+	        formPanel.add(nameField);
+	        formPanel.add(new JLabel("Grade level:"));
+	        gradeLevelComboBox = new JComboBox<>(new String[] {"Grade 11", "Grade 12"});
+	        formPanel.add(gradeLevelComboBox);
+	        formPanel.add(new JLabel("Strand/Major:"));
+	        strandField = new JTextField();
+	        strandField.setPreferredSize(new Dimension(300, 30));
+	        formPanel.add(strandField);
+	        continueButton1 = new JButton("Continue");
+	        continueButton1.addActionListener(this);
+	        formPanel.add(continueButton1);
+	
+	        setContentPane(formPanel);
+	        setVisible(true);
+	    }
 	
     @Override
     public void actionPerformed(ActionEvent e) {
