@@ -142,8 +142,8 @@ public class LMS extends JFrame implements ActionListener {
                             selectedCoursesPanel.add(label);
                         }
                     }
-										selectedCoursesPanel.revalidate();
-        						selectedCoursesPanel.repaint();
+					selectedCoursesPanel.revalidate();
+        			selectedCoursesPanel.repaint();
                     dialog.dispose();
                 }
             });
